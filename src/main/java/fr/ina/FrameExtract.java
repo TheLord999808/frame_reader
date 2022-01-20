@@ -27,7 +27,11 @@ import fr.ina.FrameExtract.SampleMode;
 
 
 public abstract class FrameExtract implements Closeable {
-
+	
+	public static void main(String args[]){
+		System.out.println("ça marche");
+	}
+	
     public static final List<String> list = new LinkedList<String>(Arrays.asList(new String[] {
         "DC1394", "FlyCapture", "FlyCapture2", "RealSense", "RealSense2", "PS3Eye", "VideoInput", "OpenCV", "FFmpeg", "IPCamera" }));
     public static void init() {
