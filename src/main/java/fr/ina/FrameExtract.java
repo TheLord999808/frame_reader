@@ -25,14 +25,9 @@ import org.bytedeco.javacv.Java2DFrameConverter;
     	int time = Integer.parseInt(timetoex);
         FFmpegFrameGrabber frameGrabber = new FFmpegFrameGrabber(myObj.getAbsoluteFile());
         frameGrabber.start();
+        frameGrabber.setTimestamp(time*1000000);
         Frame f;
-        int cpt = 0;
         try {
-        	while(cpt <> time) 
-        	{
-        		framePass = true;
-        		cpt = cpt + 1;
-        	}
             Java2DFrameConverter c = new Java2DFrameConverter();
             f = frameGrabber.grab();
             BufferedImage bi = c.convert(f);
