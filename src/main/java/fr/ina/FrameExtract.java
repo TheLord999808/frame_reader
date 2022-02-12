@@ -11,11 +11,11 @@ import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.Java2DFrameConverter;
 
-	public class FrameExtract {
+public class FrameExtract {
 	
     public static void main(String []args) throws Exception
     {
-    	System.out.println("Veuillez entre le nom du fichier et son chemin d'accés");
+    	System.out.println("Veuillez entre le nom du fichier et son chemin d'accÃ©s");
     	Scanner filepath = new Scanner(System.in);
     	String filename = filepath.nextLine();
     	File myObj = new File(filename);
